@@ -1,0 +1,115 @@
+{
+  "name": "mdc-file-manager",
+  "displayName": "MDC文件管理器",
+  "description": "管理和快速复制.mdc文件到.cursor目录的VS Code插件",
+  "version": "1.0.0",
+  "publisher": "qiang521o",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qiang521o/mdc-file-manager"
+  },
+  "homepage": "https://github.com/qiang521o/mdc-file-manager#readme",
+  "bugs": {
+    "url": "https://github.com/qiang521o/mdc-file-manager/issues"
+  },
+  "author": {
+    "name": "qiang521o",
+    "url": "https://github.com/qiang521o"
+  },
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "mdc",
+    "cursor",
+    "file-manager",
+    "template",
+    "cursor-rules",
+    "vscode-extension",
+    "template-manager",
+    "development-tools"
+  ],
+  "license": "MIT",
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "mdcManager.showBuiltinResources",
+        "title": "浏览内置MDC资源",
+        "category": "MDC Manager"
+      },
+      {
+        "command": "mdcManager.selectExternalFiles",
+        "title": "选择外部MDC文件",
+        "category": "MDC Manager"
+      },
+      {
+        "command": "mdcManager.importAllBuiltinResources",
+        "title": "一键导入全部内置模板",
+        "category": "MDC Manager"
+      },
+      {
+        "command": "mdcManager.importFromGitRepository",
+        "title": "从Git仓库导入MDC文件",
+        "category": "MDC Manager"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "mdcManager.showBuiltinResources",
+          "when": "workspaceFolderCount > 0"
+        },
+        {
+          "command": "mdcManager.selectExternalFiles",
+          "when": "workspaceFolderCount > 0"
+        },
+        {
+          "command": "mdcManager.importAllBuiltinResources",
+          "when": "workspaceFolderCount > 0"
+        },
+        {
+          "command": "mdcManager.importFromGitRepository",
+          "when": "workspaceFolderCount > 0"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "mdcManager.showBuiltinResources",
+          "when": "explorerResourceIsFolder",
+          "group": "mdcManager"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.28.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.4",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0",
+    "ts-loader": "^9.4.1",
+    "copy-webpack-plugin": "^11.0.0",
+    "@vscode/test-electron": "^2.2.0"
+  }
+}
