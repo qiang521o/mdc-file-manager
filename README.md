@@ -237,13 +237,6 @@ MDC文件管理器是一个VS Code插件，专门用于管理和复制.mdc模板
 - 💭 **功能讨论**: [GitHub Issues](https://github.com/qiang521o/mdc-file-manager/issues) (使用"Feature Request"标签)
 - 🌟 **给项目点星**: [Star此项目](https://github.com/qiang521o/mdc-file-manager)
 
-> 💡 **提示**: 如果您想启用GitHub Discussions功能，请按以下步骤操作：
-> 1. 前往 [仓库设置页面](https://github.com/qiang521o/mdc-file-manager/settings)
-> 2. 在左侧菜单中找到 "Features" 选项
-> 3. 勾选 "Discussions" 复选框
-> 4. 点击 "Save" 保存设置
-> 5. 启用后，功能讨论链接将自动跳转到Discussions页面
-
 ## 📄 许可证
 
 本项目采用 [MIT许可证](LICENSE) - 查看 [LICENSE](LICENSE) 文件了解详情。
