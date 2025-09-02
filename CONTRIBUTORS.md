@@ -43,6 +43,7 @@
 | 沟通优化 | communication-strategist.mdc | [@qiang521o](https://github.com/qiang521o) | ✅ 内置 | 结构化表达战略家 |
 | 演示设计 | presentation-designer.mdc | [@qiang521o](https://github.com/qiang521o) | ✅ 内置 | AI演示文稿设计师 |
 | 架构可视化 | interactive-architecture-generator.mdc | [@qiang521o](https://github.com/qiang521o) | ✅ 内置 | 交互式架构图生成器 |
+| 分步求解 | sequential-thinking.mdc | [@qiang521o](https://github.com/qiang521o) | ✅ 内置 | 智能分步问题解决工具 |
 
 #### 🤖 AI增强工具 (Templates层) 🆕
 | 工具类型 | 工具名称 | 创建者 | 状态 | 用途 |
@@ -181,17 +182,17 @@
 ## 📊 贡献统计
 
 - **总贡献者数量**: 1 人 (项目创始人)
-- **内置模板文件数量**: 12 个 (8个.mdc + 4个.md)
+- **内置模板文件数量**: 13 个 (9个.mdc + 4个.md)
   - Cursor Rules (.mdc): 2 个 (Base层)
   - Cursor Rules模板 (.md): 4 个 (Templates层)  
-  - AI工具 (.mdc): 6 个 (Tools层4个 + Templates层2个)
+  - AI工具 (.mdc): 7 个 (Tools层5个 + Templates层2个)
 - **项目结构**: 3 个分层
   - 🤖 Base层: 2个规则文件 (强制执行)
   - 📚 Templates层: 6个文件 (4个规则模板 + 2个AI工具)
   - 🛠️ Tools层: 4个AI工具文件 (专业AI助手)
 - **代码提交数**: 多次提交
 - **项目状态**: 🟢 活跃开发中
-- **AI工具生态**: 6个专业AI助手 (开发、沟通、设计、可视化、提示词优化、质量校验)
+- **AI工具生态**: 7个专业AI助手 (开发、沟通、设计、可视化、提示词优化、质量校验、分步问题求解)
 - **等待社区贡献的技术栈**: 25+ 个 (覆盖编程语言、DevOps、数据库、前端、工具配置)
 
 ## 🗺️ 项目路线图
